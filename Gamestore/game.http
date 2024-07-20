@@ -1,0 +1,30 @@
+
+
+GET  http://localhost:5151/games
+
+###
+GET  http://localhost:5151/games/
+
+###
+POST  http://localhost:5151/games/
+Content-Type: application/json
+
+{
+    
+    "name": "Valorent",
+    "genreId": 4,
+    "price": 3.99,
+    "release_date": "2019-03-18"
+  }
+###
+PUT  http://localhost:5151/games/2
+Content-Type: application/json
+
+{
+    "name": "valorent",
+    "genreId": 5,
+    "price": 15.99,
+    "release_date": "2019-03-18"
+}
+###
+DELETE  http://localhost:5151/games/23
